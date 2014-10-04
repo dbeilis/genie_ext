@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "1-800-Genesys",
+  "description": "Browser interface into 1-800-Genesys",
+  "version": "1.0",
+
+  "icons": { "16":  "images/icon_16.png",
+             "48":  "images/icon_48.png",
+             "128": "images/icon_128.png" },
+
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "https://genesysvoice.com:8080/",
+    "http://genesysvoice.com:8080/",
+    "storage",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon_16.png",
+    "default_popup": "index.html"
+  }
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Voice Apps</title>
+
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="css/web-speech.css" media="screen" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/web-speech.js"></script>
+
+</head>
+
+<body>
+
+<!-- <section class="head card">
+  <div id="info">
+    <p id="info_start">Click on the microphone icon and begin speaking.</p>
+    <p id="info_speak_now">Speak now.</p>
+    <p id="info_no_speech">No speech was detected. You may need to adjust your
+      <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+        microphone settings</a>.</p>
+    <p id="info_no_microphone" style="display:none">
+      No microphone was found. Ensure that a microphone is installed and that
+      <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+      microphone settings</a> are configured correctly.</p>
+    <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
+    <p id="info_denied">Permission to use microphone was denied.</p>
+    <p id="info_blocked">Permission to use microphone is blocked. To change,
+      go to chrome://settings/contentExceptions#media-stream</p>
+    <p id="info_upgrade">Web Speech API is not supported by this browser.
+       Upgrade to <a href="//www.google.com/chrome">Chrome</a>
+       version 25 or later.</p>
+  </div>
+</section> -->
+
+<main>
+
+<div>
+  <input placeholder="Tell me about John" autocomplete="off" />  
+  <!-- <div class="right">
+    <button id="start_button" onclick="startButton(event)">
+    <img id="start_img" src="images/mic.gif" alt="Start"></button>
+  </div>
+  <div id="results">
+    <span id="final_span" class="final"></span>
+    <span id="interim_span" class="interim"></span>
+    <p>
+  </div> -->
+</div>
+
+<header></header>
+
+<section class="card">
+  <h1>Welcome to 1-800-Genesys</h1>
+  <h2>Everything is currently a work in progress. Any card marked with an <span class="blue">asterik (*)</span> is currently being worked on. Hope you enjoy this project!</h2>
+</section>
+<section class="card">
+  <h1>Cards show up here when you need them</h1>
+  <h2>Over time, prediction improves and more cards appear. To see examples, check out the sample cards.</h2><hr>
+  <span class="blue icon-file-text"></span> <span class="blue">Show sample cards</span>  
+</section>  
+
+<section class="card">
+  <h1>Swipe cards away when you don't need them</h1>
+  <h2>Over time, prediction improves and more cards appear. To see examples, check out the sample cards.</h2><br>
+  <img src="http://labs.oceanicviewstudios.com/now/img/flick-gesture.jpg" class="img-align-c">
+  <p class="align-center"><span class="blue icon-arrow-left"></span> <span class="blue">Go ahead, try it.</span> <span class="blue icon-arrow-right"></span></p>
+  <br>
+</section>  
+
+<section class="card">
+  <h1>John Doe is at work</h1>
+  <div class="work"></div>
+</section>
+
+<section class="card">
+  <h1 class="o-title">33 miles in October<span class="blue">*</span></h1>
+  <h2>21 miles more than September</h2><hr>
+  <h2>Summary of <span class="gy-title">September</span> &amp <span class="o-title">October</span></h2>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51252/activitychart_2.jpg">
+  <h2 class="rightof"><hr>
+  <span class="gy-title">12 miles walking</span><br><span class="o-title">31 miles walking</span><hr>
+  <span class="gy-title">1 mile cycling</span><br><span class="o-title">2 miles cycling</span>
+  </h2>
+  <h2 class="description">Based on your device's location which is periodically sent to Google. <span class="blue underline">Learn more.</span></h2>
+</section>
+
+<section class="card">
+  <h1>Sammy Soe<span class="blue">*</span></h1>
+  <h2>is 100 feet away</h2>
+</section>
+
+<section class="card">
+  <h1>Ralph Roe has left work<span class="blue">*</span></h1>
+  <span class="g-title">12 min</span> from home<br>
+  <span>Updated 4 min ago</span>
+  <div class="left"></div>
+  <div class="question">Ralph Roe has allowed you to see updated on his commute. Interested in updates on Ralph Roe's commute? <u>Learn more</u><br><br>
+  <span class="offset">Yes</span><span class="offset">No</span></div>
+</section>
+
+<section class="card">
+  <h1>Happy Birthday!</h1>
+  <div class="birthday"></div>
+  <h2>You are 590,805,235 seconds young today!</h2>
+</section>
+
+<section class="card">
+  <h1><time></time> Wednesday<span class="blue">*</span></h1>
+  <h2>Time at home</h2>
+</section>
+
+<section class="card">
+  <h1><span class="o-title">18 minutes</span> to Work</h1>
+  <h2>GA-151 S and GA-2 W</h2>
+  <div class="map"></div>
+  <span class="blue icon-location-arrow"></span> <span class="blue">Navigate / 18 min via GA-151 S and GA-2 W</span>  
+</section>
+
+<section class="card">
+  <h1>Embarcadero<span class="blue">*</span></h1>
+  <h2>Train station</h2>
+  <span class="blue icon-circle-blank"></span> Fremont to Daly City<br><h2>Inbound - Limited</h2><hr>
+  <span class="g-title icon-circle-blank"></span> Pittsburg/Bay Point to...<hr>
+  <span class="r-title icon-circle-blank"></span> Richmond to Daly City...<hr>
+  <span class="blue icon-file-text"></span> <span class="blue">All scheduled departures</span><hr>
+  <span class="blue icon-location-arrow"></span> <span class="blue">Directions</span>
+</section>
+
+<!-- Google Wallet Cards -->
+<section class="card">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51252/walletSwipe.jpg" class="leftof" style="width: 119.66px; length: 119.66px;" alt="">
+  <h1>Get the Google Wallet Card</h1>
+  <h2>Spend your Wallet Balance in stores for free with the Wallet Card. <span class="blue">Learn more</span></h2><hr>
+  <h2 class="blue">Get your card</h2>
+</section>
+
+<section class="card"> 
+  <div class="layout-two-column">
+      <div class="align-center">
+        <p class="x-large l-green">$50.00</p>
+        <p>Wallet Balance</p>
+      </div>
+      <div class="align-center">
+        <p><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/51252/walletXSmall.jpg"></p>
+        <p>Debit 1234</p>
+      </div>
+    </div><hr>
+  <h2 class="blue">Change tap and pay settings</h2>
+  </section>
+
+<section class="card">
+  <h1>Latest Transactions<span class="blue">*</span></h1><hr>
+  <h2>Organic Groceries #1123</h2><hr>
+  <h2>Add to Wallet Balance</h2><hr>
+  <h2>Money Sent to Elise Ryan</h2><hr>
+  <h2 class="blue">View all transactions</h2>
+</section>
+
+<!-- Stocks -->
+<section class="card info">
+  <h1>Stocks today</h1>
+  <h2>Updated: 4:00 PM, November 12</h2><hr>
+  <div class="stock">APPL<span class="offset blue">520.01</span><span class="offset red">-10.06</span><span class="offset red">-0.98%</span></div><hr>
+  <div class="stock">GOOG<span class="offset blue">1,011.78</span><span class="offset green">1.19</span><span class="offset green">0.12%</span></div><hr>
+</section>
+
+<section class="card">
+  <h1><span class="r-title">Storm warning</span></h1>
+  <h2>Madison, WI - May 08, 9:55am EST</h2>
+  <p>Severe thunderstorm, observed today and radar continues to indicate a tornado. This tornado is located 6mi south of Madison, moving north.</p>
+  <div class="storm"></div>
+  <span class="blue icon-file-text"></span> <span class="blue">Read more</span>  
+</section>
+
+<section class="card">
+  <h1>The Connaught Hotel<span class="blue">*</span></h1>
+  <h2>Carlos Place, Mayfair, London W1K 2AL, United Kingdom</h2>
+  <span class="r-title">Checkout is at 1:15 PM</span>
+  <div class="hotel"></div>
+</section>
+
+<section class="card">
+  <h2>News related to a story you read earlier</h2>
+  <h1>LAMBRO: Blaming others for Obamacare</h1>
+  <h2>Source: The Washington Post - 3 hours ago</h2><hr>
+  <span class="blue icon-globe"></span> <span class="blue">Read full story</span>  
+</section>
+
+<section class="card">
+  <h1>Lunch with John @ 12pm</h1>
+  <h2>827 Broad St Chattanooga, TN 37402</h2>
+  <div class="lunch"></div>
+  <span class="blue  icon-bullhorn"></span> <span class="blue">Remind me</span><hr>
+  <span class="blue  icon-location-arrow"></span> <span class="blue">Directions to 827 Broad St Chattanooga, TN 37402</span> 
+</section>
+
+<section class="card">
+  <h2>Final Score @ Nougat Center<br>Jacksonville, FL</h2>
+  <span class="blue icon-bullhorn"></span> <span class="blue">Recap</span><hr>
+  <span class="blue icon-location-arrow"></span> <span class="blue">Boxscore</span> 
+</section>
+
+<section class="card">
+  <h2>42 kilometers is<span class="blue">*</span></h2>
+  <h1>26.097 miles</h1><hr>
+</section>
+
+<section class="card">
+  <h1>Monday, July 1</h1>
+  <h2>Canada Day 2013</h2><hr>
+  <span class="blue icon-bullhorn"></span> <span class="blue">Remind me</span>  
+</section>
+
+<section class="card info">
+  <h1>Stop by the post office</h1>
+  <span class="icon-bell"></span> 2:10PM <br> <hr>
+  <span class="blue icon-time"></span> <span class="blue">Snooze</span>
+</section>
+
+<section class="card">
+  <h1>Showtimes today<span class="blue">*</span></h1>
+  <h2>Carmike Wynnsong 10 - Chattanooga</h2><hr>
+  <span class="blue icon-search"></span> <span class="blue">See more movies</span>  
+</section>
+
+<!-- TV Cards -->
+<section class="card info">
+  <h1>Watching live TV?</h1>
+  <h2>Samsung TV found on Wi-Fi network</h2><hr>
+  <span class="blue icon-microphone"></span> <span class="blue">Listen for a TV show</span>  
+</section>
+
+<section class="card action">
+  <h1>Watch now<span class="blue">*</span></h1>
+  <h2>Burn Notice, Futurama, The Big Bang Theory, Wheel of Fortune, and more on TV and video on demand</h2>
+  <div class="images">
+    <img src="http://www.labs.oceanicviewstudios.com/now/img/burnnotice.jpg"> <img src="http://www.labs.oceanicviewstudios.com/now/img/futurama.jpg"> <img src="http://www.labs.oceanicviewstudios.com/now/img/bigbangtheory.jpg"> <img src="http://www.labs.oceanicviewstudios.com/now/img/wheeloffortune.jpg">
+  </div>
+</section>
+
+<!-- Gmail - Package Tracking -->
+<section class="card info">
+  <h2>Shipped <span class="gy-title"> - 30 minutes ago</span><span class="blue">*</span></h2>
+  <h1>Canon EOS Rebel T4i...</h1><hr>
+  <span class="blue">Shipping Details</span><hr>
+  <span class="blue">View Email</span>
+</section>
+
+<section class="card ">
+  <h1 class="g-title">Package shipped<span class="blue">*</span></h1>
+  <h2>5:26pm Thursday August 10</h2><br>
+  <h2 class="gy-title">Iron Marn 2 (Three-Disk Blu-ray/DVD Combo)<br>Prometheus (Blu-ray/DVD + Digital Copy...)</h2><br>
+  <h2 class="gy-title">From:</h2><hr>
+  <span class="blue icon-globe"></span> <span class="blue">Track Package</span><hr>
+  <span class="blue icon-envelope"></span> <span class="blue">View Email</span>
+</section>
+
+<!-- Nearby events -->
+<section class="card">
+  <h1>View nearby events<span class="blue">*</span></h1>
+  <h2>Justin Bieber - Nicki Minaj - other crappy singers...</h2>
+</section>
+
+<section class="card">
+  <h1>Photo spots nearby<span class="blue">*</span></h1>
+</section>
+
+<!-- Real Estate -->
+<section class="card">
+  <h1>Properties in New York, NY<span class="blue">*</span></h1>
+  <h2>Continue your real estate research</h2>
+  <span class="blue">Show more homes for sale</span>
+</section>
+
+<section class="card">
+  <h1>1787 Garden Walk APT 101<span class="blue">*</span></h1>
+  <h2>New York, NY 10035</h2>
+  <span class="g-title">Next open house</span> <span class="gy-title">- Sat 12th June 12 - 2pm</span>
+</section>
+
+<section class="card">
+  <h1>2019 Chesterfield Avenue...<span class="blue">*</span></h1>
+  <h2>New York, NY 10016</h2><hr>
+  <hr>
+  <span class="blue">Show similar homes for sale</span><hr> <span class="blue">Show compariable homes sold</span>
+</section>
+
+<!-- Car Rental -->
+<section class="card">
+  <h1>Car Rental Reservation<span class="blue">*</span></h1>
+  <h2>Enterprise Rent-A-Car, Full Size</h2>
+  <div class="leftof">Name<br>Smith, John</div>
+  <div>Booking Number<br>S7LCYH</dib>
+  <h2>Spend your Wallet Balance in stores for free with the Wallet Card. <span class="blue">Learn more</span></h2><hr>
+  <h2 class="blue">Get your card</h2>
+</section>
+
+<!-- Research Topic -->
+<section class="card">
+  <h1>Trip to Italy<span class="blue">*</span></h1>
+  <div class="images">
+    <img src="http://www.labs.oceanicviewstudios.com/now/img/burnnotice.jpg"> <img src="http://www.labs.oceanicviewstudios.com/now/img/futurama.jpg"> <img src="http://www.labs.oceanicviewstudios.com/now/img/bigbangtheory.jpg"> <img src="http://www.labs.oceanicviewstudios.com/now/img/wheeloffortune.jpg">
+  </div><br>
+  <h2>Continue your research</h2><hr>
+  <h2 class="gy-title">A beginner's guide to train travel in Italy, including trains between Rome, Venice...</h2>
+  <h2 class="g-title">trips2italy.com</h2><hr>
+  <h2 class="gy-title">Rental Bike Venice, Colosseum, Pantheon, Trevi Fountain, St Peter's Basilica...</h2>
+  <h2 class="g-title">lonelyplanet.com</h2><hr>
+  <span class="blue icon-globe"></span> <span class="blue">Explore more</span>
+</section>
+
+<section class="card">
+  <h1>geek<span class="blue">*</span></h1>
+  <h2>/gēk/</h2>
+  <h2><span class="italic">noun <span class="gy-title">informal</span></span></h2>
+  <ol>
+    <li>an unfashionable or socially inept person.</li>
+    <li>a cernical performer who performs wild or disgusting acts.
+  </ol>
+  <h2><span class="italic">verb</span></h2>
+  <ol>
+    <li>engage in or discuuss computer-related tasks obsessively or with great attention to technical detail.</li>
+  </ol>
+  <p class="gy-title">"we all geeked out for a bit and exchanged ICQ/MSN/AOL/website information."</p>
+</section>
+</main>
+
+</body>
+
+</html>
