@@ -12,7 +12,7 @@ function Transport_REST_HTTC(oOptions){
         initDfd = new Deferred(),
         callbacks = {},
 		bPolling = false,
-		iPollInterval_ms = 3000,
+		iPollInterval_ms = 2000,
 		bFirstPoll = true;
 
 
